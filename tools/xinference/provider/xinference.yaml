@@ -1,0 +1,41 @@
+credentials_for_provider:
+  base_url:
+    help:
+      en_US: Please input your xinference base URL
+      zh_Hans: 请输入你的 xinference base URL
+    label:
+      en_US: xinference base URL
+      zh_Hans: xinference base URL
+    placeholder:
+      en_US: Please input your xinference base URL
+      pt_BR: Please input your xinference base URL
+      zh_Hans: 请输入你的 xinference base URL
+    required: false
+    type: text-input
+  api_key:
+    help:
+      en_US: Please input your xinference API key
+      zh_Hans: 请输入你的 xinference API key
+    label:
+      en_US: xinference API key
+      zh_Hans: xinference API key
+    placeholder:
+      en_US: Please input your xinference API key
+      zh_Hans: 请输入你的 xinference API key
+    required: false
+    type: secret-input
+identity:
+  author: hapi
+  name: xinference
+  label:
+    en_US: xinference
+    zh_Hans: xinference
+  description:
+    en_US: xinference
+    zh_Hans: xinference
+  icon: icon.png
+tools:
+  - tools/xinference.yaml
+extra:
+  python:
+    source: provider/xinference.py

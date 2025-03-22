@@ -1,0 +1,36 @@
+version: 0.0.1
+type: plugin
+author: hapi
+name: xinference
+tags:
+- image
+label:
+  en_US: xinference
+  zh_Hans: xinference
+description:
+  en_US: The image generation API provided  by xinference
+  zh_Hans: xinference提供的图片、视频API，
+icon: icon.png
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+plugins:
+  tools:
+  - provider/xinference.yaml
+meta:
+  version: 0.0.1
+  arch:
+  - amd64
+  - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-22T15:36:45.522743698+08:00
+privacy: PRIVACY.md
+verified: false
