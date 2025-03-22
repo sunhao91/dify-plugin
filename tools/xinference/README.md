@@ -5,5 +5,7 @@
 **Type:** tool
 
 ### Description
+[文档参考](https://platform.openai.com/docs/api-reference/images/create)
+
 
 

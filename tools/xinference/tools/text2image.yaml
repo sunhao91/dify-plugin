@@ -21,9 +21,20 @@ parameters:
     en_US: prompt
     zh_Hans: 提示词
   human_description:
-    en_US: The text prompt used to generate the image.
-    zh_Hans: 用于生成图片的文字提示词
-  llm_description: this prompt text will be used to generate image.
+    en_US: Text prompts for image generation in the model.
+    zh_Hans: 用英文表达的模型生成图片的文字提示词
+  llm_description: English text prompts for image generation in the model.
+  form: llm
+- name: negative_prompt
+  type: string
+  required: false
+  label:
+    en_US: Negative Prompt
+    zh_Hans: 负向提示词
+  human_description:
+    en_US: text prompt that specifies what you don't want to see in the generated image.
+    zh_Hans: 用英文表达的指定在生成图片中不希望出现的内容的文本提示词。
+  llm_description: English text prompt that specifies what you don't want to see in the generated image.
   form: llm
 - name: model
   type: string
@@ -157,15 +168,15 @@ parameters:
     en_US: Schedule Method
     zh_Hans: 调度方法
   form: form
-- name: negative_prompt
+- name: default_negative_prompt
   type: string
   required: false
   label:
     en_US: Negative Prompt
-    zh_Hans: 负向提示
+    zh_Hans: 默认负向提示词
   human_description:
     en_US: Text prompt that specifies what you don't want to see in the generated image.
-    zh_Hans: 指定在生成图片中不希望出现的内容的文本提示词。
+    zh_Hans: 指定在生成图片中不希望出现的内容的文本提示词。同时配置negative prompt，优先使用配置的negative prompt
   form: form
 - name: seed
   type: number

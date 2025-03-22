@@ -6,6 +6,6 @@
 
 ### Tools
 
-| plugin                         | text to image |
-|--------------------------------|---------------|
-| [xinference](tools/xinference) | ✅             |   
+| plugin                         | marketplace | text to image |
+|--------------------------------|-------------|---------------|
+| [xinference](tools/xinference) | ❌           | ✅             |   

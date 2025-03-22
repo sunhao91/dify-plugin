@@ -24,6 +24,11 @@ credentials_for_provider:
       zh_Hans: 请输入你的 xinference API key
     required: false
     type: secret-input
+
+extra:
+  python:
+    source: provider/xinference.py
+
 identity:
   author: hapi
   name: xinference
@@ -34,8 +39,7 @@ identity:
     en_US: xinference
     zh_Hans: xinference
   icon: icon.png
+  tags:
+  - image
 tools:
-  - tools/xinference.yaml
-extra:
-  python:
-    source: provider/xinference.py
+- tools/text2image.yaml

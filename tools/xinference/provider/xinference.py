@@ -15,7 +15,7 @@ class XinferenceProvider(ToolProvider):
         headers = {
             "accept": "application/json",
         }
-        if not api_key:
+        if api_key:
             headers["authorization"] = f"Bearer {api_key}"
 
         response = requests.get(f"{base_url}/v1/models", headers=headers)
